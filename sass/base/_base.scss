@@ -1,0 +1,29 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.s1{
+  background-color: $mainColor;
+  border-bottom: 1px $borderColor;
+  overflow: auto;
+}
+  
+.s2{
+  background-color: $secondaryColor;
+  border-bottom: 1px $borderColor;
+} 
+
+.main-container{
+  width: 1200px;
+  margin: 0 auto;
+  overflow: auto;
+  @include responsive (big-desktop) {
+    width: 95%;
+  
+  }
+}
+

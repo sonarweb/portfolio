@@ -1,0 +1,21 @@
+@mixin responsive($breakpoint) {
+    @if $breakpoint == tab-port{
+       @media only screen and (min-width: 768px) { @content }
+   }
+
+   @if $breakpoint == desktop{
+       @media only screen and (max-width: 800px) { @content } 
+   }
+
+   @if $breakpoint == big-desktop{
+       @media only screen and (max-width: 1920px) { @content } 
+   }
+}
+
+
+@mixin box-shadow($shadow...) {
+    -webkit-box-shadow: $shadow;
+       -moz-box-shadow: $shadow;       
+            box-shadow: $shadow;
+  }
+  
