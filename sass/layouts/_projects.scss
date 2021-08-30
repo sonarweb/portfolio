@@ -1,0 +1,32 @@
+.post-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 320px);
+    gap: 20px;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.thumbnail{
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.post{
+    border: 1px solid $borderColor;
+    @include box-shadow(-2px 7px 21px -9px rgba($shadow-color, .75));
+}
+
+.post-preview{
+    background-color: #fff;
+    padding: 15px;
+    .post-title{
+        color: black;
+        margin: 0;
+    }
+    .post-intro{
+        font-size: 1rem;
+    }
+}
+
